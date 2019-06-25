@@ -47,12 +47,13 @@
             this.추가ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.도움말ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.이프로그램은ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusMessage = new System.Windows.Forms.StatusStrip();
+            this.status = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusMessage = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.cmsMenu.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.statusMessage.SuspendLayout();
+            this.status.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -194,20 +195,21 @@
             // 이프로그램은ToolStripMenuItem
             // 
             this.이프로그램은ToolStripMenuItem.Name = "이프로그램은ToolStripMenuItem";
-            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.이프로그램은ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.이프로그램은ToolStripMenuItem.Text = "이 프로그램은..";
             this.이프로그램은ToolStripMenuItem.Click += new System.EventHandler(this.이프로그램은ToolStripMenuItem_Click);
             // 
-            // statusMessage
+            // status
             // 
-            this.statusMessage.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusMessage.Location = new System.Drawing.Point(0, 301);
-            this.statusMessage.Name = "statusMessage";
-            this.statusMessage.Size = new System.Drawing.Size(742, 22);
-            this.statusMessage.SizingGrip = false;
-            this.statusMessage.TabIndex = 6;
-            this.statusMessage.Text = "statusStrip1";
+            this.status.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.statusMessage});
+            this.status.Location = new System.Drawing.Point(0, 301);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(742, 22);
+            this.status.SizingGrip = false;
+            this.status.TabIndex = 6;
+            this.status.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
@@ -215,12 +217,18 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel1.Text = "상태 : ";
             // 
+            // statusMessage
+            // 
+            this.statusMessage.Name = "statusMessage";
+            this.statusMessage.Size = new System.Drawing.Size(12, 17);
+            this.statusMessage.Text = "-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(742, 323);
-            this.Controls.Add(this.statusMessage);
+            this.Controls.Add(this.status);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnModify);
@@ -239,8 +247,8 @@
             this.cmsMenu.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.statusMessage.ResumeLayout(false);
-            this.statusMessage.PerformLayout();
+            this.status.ResumeLayout(false);
+            this.status.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,8 +273,9 @@
         private System.Windows.Forms.ToolStripMenuItem 추가ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 도움말ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 이프로그램은ToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusMessage;
+        private System.Windows.Forms.StatusStrip status;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel statusMessage;
     }
 }
 

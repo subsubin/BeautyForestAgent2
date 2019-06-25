@@ -23,7 +23,7 @@ namespace BeautyForestAgent
 
         private void ShowModify()
         {
-            this.statusMessage.Text = "수정 창을 띄웁니다.";
+            this.status.Text = "수정 창을 띄웁니다.";
             FormModify m = new FormModify();
             m.Title = "수정 창띄우기";
             m.ShowDialog();
@@ -31,7 +31,7 @@ namespace BeautyForestAgent
 
         private void ShowAdd()
         {
-            this.statusMessage.Text = "추가 창을 띄웁니다.";
+            this.status.Text = "추가 창을 띄웁니다.";
             FormAdd m = new FormAdd();
             m.Title = "추가 창띄우기";
             m.Show();
@@ -39,7 +39,7 @@ namespace BeautyForestAgent
 
         private void 이프로그램은ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.statusMessage.Text = "이 프로그램은..";
+            this.status.Text = "이 프로그램은..";
             FormAbout m = new FormAbout();
             m.Title = "이 프로그램은..";
             m.ShowDialog();
@@ -58,7 +58,7 @@ namespace BeautyForestAgent
 
         private void 끝내기ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.statusMessage.Text = "종료합니다.";
+            this.status.Text = "종료합니다.";
             Application.ExitThread();  // 어플리케이션 쓰레드 완전 종료
         }
 
