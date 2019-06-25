@@ -61,6 +61,16 @@ namespace BeautyForestAgent
             this.statusMessage.Text = "종료합니다.";
             Application.ExitThread();  // 어플리케이션 쓰레드 완전 종료
         }
+
+        private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowModify();
+        }
+
+        private void 추가ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowAdd();
+        }
     }
 
 }
